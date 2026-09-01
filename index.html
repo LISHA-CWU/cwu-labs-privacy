@@ -1,0 +1,244 @@
+<title>CWU-Labs Privacy</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Barlow:wght@400;500;600&display=swap');
+
+:root {
+  --bg: #F2F2F3;
+  --ink: #1D1F20;
+  --ink-70: rgba(29,31,32,0.72);
+  --ink-50: rgba(29,31,32,0.52);
+  --border: rgba(29,31,32,0.14);
+  --accent: #5980A6;
+  --accent-deep: #416180;
+  --card: rgba(29,31,32,0.02);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1D2D3D;
+    --ink: #F2F2F3;
+    --ink-70: rgba(242,242,243,0.72);
+    --ink-50: rgba(242,242,243,0.52);
+    --border: rgba(242,242,243,0.16);
+    --accent: #94BCE3;
+    --accent-deep: #B5D9FD;
+    --card: rgba(242,242,243,0.03);
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1D2D3D;
+  --ink: #F2F2F3;
+  --ink-70: rgba(242,242,243,0.72);
+  --ink-50: rgba(242,242,243,0.52);
+  --border: rgba(242,242,243,0.16);
+  --accent: #94BCE3;
+  --accent-deep: #B5D9FD;
+  --card: rgba(242,242,243,0.03);
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Barlow', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: 780px; margin: 0 auto; padding: 96px 32px 140px; }
+
+.eyebrow {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+  margin: 0 0 18px;
+}
+h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 1.08;
+  letter-spacing: 0.01em;
+  margin: 0 0 14px;
+  text-wrap: balance;
+}
+.meta {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 15px;
+  color: var(--ink-50);
+  font-variant-numeric: tabular-nums;
+  padding-bottom: 40px;
+  margin-bottom: 48px;
+  border-bottom: 1px solid var(--border);
+}
+.meta span { white-space: nowrap; }
+
+.lede {
+  font-size: 19px;
+  line-height: 1.6;
+  color: var(--ink-70);
+  max-width: 62ch;
+  margin: 0 0 64px;
+}
+
+section { display: flex; gap: 28px; margin-bottom: 52px; }
+.num {
+  flex: none;
+  width: 44px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  color: var(--ink-50);
+  padding-top: 4px;
+}
+.body { flex: 1; min-width: 0; max-width: 62ch; }
+h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 0.01em;
+  margin: 0 0 14px;
+  text-wrap: balance;
+}
+p { font-size: 17px; line-height: 1.65; color: var(--ink-70); margin: 0 0 14px; }
+p:last-child { margin-bottom: 0; }
+ul { margin: 0 0 14px; padding-left: 22px; }
+li { font-size: 17px; line-height: 1.65; color: var(--ink-70); margin-bottom: 8px; }
+strong { color: var(--ink); font-weight: 600; }
+code {
+  font-family: ui-monospace, 'SF Mono', monospace;
+  font-size: 0.9em;
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 1px 6px;
+}
+
+.callout {
+  border: 1px solid var(--border);
+  background: var(--card);
+  padding: 22px 26px;
+  margin-top: 8px;
+  position: relative;
+}
+.callout::before {
+  content: "";
+  position: absolute; top: -6px; left: -6px;
+  width: 12px; height: 12px;
+  border-top: 1.5px solid var(--ink-50);
+  border-left: 1.5px solid var(--ink-50);
+}
+.callout::after {
+  content: "";
+  position: absolute; bottom: -6px; right: -6px;
+  width: 12px; height: 12px;
+  border-bottom: 1.5px solid var(--ink-50);
+  border-right: 1.5px solid var(--ink-50);
+}
+.callout p { color: var(--ink); font-size: 16px; margin: 0; }
+.callout a { color: var(--accent-deep); text-decoration: none; border-bottom: 1px solid currentColor; }
+.callout a:hover { color: var(--accent); }
+
+footer {
+  margin-top: 80px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-50);
+}
+
+@media (max-width: 640px) {
+  .wrap { padding: 64px 20px 100px; }
+  h1 { font-size: 34px; }
+  section { gap: 16px; }
+  .num { width: 32px; }
+}
+</style>
+
+<div class="wrap">
+  <p class="eyebrow">Privacy Policy</p>
+  <h1>CWU-Labs - Monitor</h1>
+  <div class="meta">
+    <span>Effective September 1, 2026</span>
+    <span>Published by CWU Labs</span>
+    <span>Applies to iOS app v1.1+</span>
+  </div>
+
+  <p class="lede">CWU-Labs - Monitor connects to CWU Labs research wearables over Bluetooth and records their sensor data to files on your iPad. This page explains, plainly, what the app does and doesn't do with your data.</p>
+
+  <section>
+    <div class="num">01</div>
+    <div class="body">
+      <h2>What the app collects</h2>
+      <p>When you connect a device (HRPC, MA-RMA, or FNIRS), the app receives the physiological and motion sensor data that device streams over Bluetooth — accelerometer, gyroscope, PPG, temperature, magnetometer, or fNIRS optical readings, depending on the device — along with its Bluetooth-advertised device name and battery level.</p>
+      <p>The app does not collect your name, location, contacts, photos, microphone or camera input, or any account information. There is no login and no user account of any kind.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="num">02</div>
+    <div class="body">
+      <h2>Where your data goes</h2>
+      <p>Sensor data is written to CSV files stored locally in the app's Documents folder on your iPad, organized by recording session. Nothing is uploaded automatically. You control export entirely yourself, through the iOS Files app (<code>On My iPad › CWU-Labs › Sessions</code>) or the app's own session export screen.</p>
+      <p>Deleting a session, or deleting the app, removes that data from your device. CWU Labs has no server that stores or receives your recorded sensor data.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="num">03</div>
+    <div class="body">
+      <h2>Network activity</h2>
+      <p>The app makes a small number of network requests, all unauthenticated and none carrying your sensor data or any personal information:</p>
+      <ul>
+        <li>Checking a public GitHub-hosted manifest to see whether a newer device firmware version is available.</li>
+        <li>Downloading a signed firmware package when you explicitly choose to update a device.</li>
+      </ul>
+      <p>The app contains no analytics, advertising, or tracking software of any kind, and does not share data with any third party.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="num">04</div>
+    <div class="body">
+      <h2>Bluetooth permission</h2>
+      <p>The app requests Bluetooth access solely to discover and stream data from CWU Labs sensor devices. It does not scan for or connect to any other Bluetooth accessory, and Bluetooth access is never used to identify or track you.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="num">05</div>
+    <div class="body">
+      <h2>Children's privacy</h2>
+      <p>CWU-Labs - Monitor is a research instrument distributed for use by CWU Labs researchers and collaborators. It is not directed at children and is not intended for use by children.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="num">06</div>
+    <div class="body">
+      <h2>Changes to this policy</h2>
+      <p>If this policy changes, the effective date above will be updated. Material changes will be reflected in the app's release notes.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="num">07</div>
+    <div class="body">
+      <h2>Contact</h2>
+      <p>Questions about this policy or how the app handles data can be sent to:</p>
+      <div class="callout">
+        <p><strong>LISHA — Lab for Intelligent Sensing, Harvesting and Actuation, NUS</strong><br>
+        <a href="mailto:cwu@nus.edu.sg">cwu@nus.edu.sg</a> · <a href="https://blog.nus.edu.sg/lisha/">blog.nus.edu.sg/lisha</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>CWU-Labs - Monitor · CWU Labs</footer>
+</div>
